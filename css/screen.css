@@ -63,7 +63,7 @@ img {
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
-  font-weight: normal;
+  font-weight: Bold;
   line-height: 40px;
   margin: 0 0 24px;
 }
@@ -74,10 +74,10 @@ h2 {
   margin: 0 0 24px;
 }
 
-*+h2 { 
-    /*Hiermee selecteer je elke h2 die direct na gelijk welk element komt en pas je een margin-top van 48px toe.
+* + h2 {
+  /*Hiermee selecteer je elke h2 die direct na gelijk welk element komt en pas je een margin-top van 48px toe.
     Dubbel zo veel om margin-collapsing te voorkomen.*/
-    margin-top: 48px;
+  margin-top: 48px;
 }
 
 h3 {
@@ -86,6 +86,7 @@ h3 {
   margin: 0 0 24px;
 }
 
+h1,
 h2,
 h3 {
   font-family: 'Inter Web', 'Helvetica Neue', Helvetica, arial, sans-serif;
@@ -150,6 +151,39 @@ hr {
 a {
   color: #00a1e6;
   transition: all 0.1s ease-in-out;
+}
+
+/*
+    components: Author
+*/
+
+.c-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.c-author__image {
+  width: 56px; /* = w56*/
+  height: 56px; /* = h56*/
+  border-radius: 100%; /* = bdrs100% */
+}
+
+.c-author__meta {
+  font-size: 14px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, arial, sans-serif;
+  line-height: 24px;
+}
+
+.c-author__name{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.c-author__name,
+.c-author__meta {
+  margin-bottom: 0;
 }
 
 a:visited, /* LoVe always comes before Hate */ /* Visited always become before active*/
