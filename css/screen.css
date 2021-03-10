@@ -61,7 +61,7 @@ img {
 */
 
 h1 {
-  font-family: "Playfair Display" ,serif;
+  font-family: 'Playfair Display', serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
@@ -72,6 +72,12 @@ h2 {
   font-size: 23px;
   line-height: 32px;
   margin: 0 0 24px;
+}
+
+*+h2 { 
+    /*Hiermee selecteer je elke h2 die direct na gelijk welk element komt en pas je een margin-top van 48px toe.
+    Dubbel zo veel om margin-collapsing te voorkomen.*/
+    margin-top: 48px;
 }
 
 h3 {
