@@ -61,7 +61,7 @@ img {
 */
 
 h1 {
-  font-family: serif;
+  font-family: "Playfair Display" ,serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
@@ -80,7 +80,6 @@ h3 {
   margin: 0 0 24px;
 }
 
-h1,
 h2,
 h3 {
   font-family: 'Inter Web', 'Helvetica Neue', Helvetica, arial, sans-serif;
